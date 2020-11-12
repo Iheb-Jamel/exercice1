@@ -1,0 +1,39 @@
+<table>
+<tr>
+<td>
+nom
+
+</td>
+<td>
+
+  prenom
+</td>
+<td>
+
+  cin
+</td>
+
+
+</tr>
+
+<tr *ngFor="let personne of personnes">
+<td>
+{{personne.nom}}
+
+</td>
+<td>
+  {{personne.prenom}}
+  
+  </td><td>
+    {{personne.cin}}
+    
+    </td>
+    <td>
+  <button (click)="deletepersonne(personne.id)">delete</button>
+    </td>
+</tr>
+
+
+
+
+</table>
